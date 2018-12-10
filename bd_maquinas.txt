@@ -1,3 +1,4 @@
+
 create table caminhoneiro(
 id serial,
 nome varchar(50) not null,
@@ -35,13 +36,15 @@ primary key(id));
 create table pedido(
 id serial,
 id_cliente int,
+id_vendedor int,
 id_caminhoneiro int,
 id_produto int,
 endereco varchar(100) not null,
 primary key(id),
-FOREIGN KEY (id_cliente) REFERENCES cliente(id) on DELETE CASCADE on UPDATE CASCADE,
-FOREIGN KEY (id_caminhoneiro) REFERENCES caminhoneiro(id) on DELETE CASCADE on UPDATE CASCADE,
-FOREIGN KEY (id_produto) REFERENCES produto(id) on DELETE CASCADE on UPDATE CASCADE);
+FOREIGN KEY (id_cliente) REFERENCES cliente(id),
+FOREIGN KEY (id_vendedor) REFERENCES vendedor(id),
+FOREIGN KEY (id_caminhoneiro) REFERENCES caminhoneiro(id),
+FOREIGN KEY (id_produto) REFERENCES produto(id));
 
 	
 
@@ -70,5 +73,4 @@ insert into produto(nome, descricao) values('colheitadeira','Usado em grandes pr
 insert into produto(nome, descricao) values('Trator grande','Usado lavouras de grande porte');
 
 
-insert into pedido(id_cliente, id_caminhoneiro, id_produto, endereco) values(1,1,1,'rua Duque 22');
-insert into pedido(id_cliente, id_caminhoneiro, id_produto, endereco) values(2,2,2,'rua andradas 22');
+insert into pedido(id_cliente, id_vendedor, id_caminhoneiro, id_produto, endereco) values(1,1,1,1,'rua Duque 22');
