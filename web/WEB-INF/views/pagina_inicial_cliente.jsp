@@ -50,12 +50,14 @@
                 <div class="row" >
                     <div class="px-5 col-md-8 text-center mx-auto">
                         <h3 class="text-primary display-4"> <b>Máquinas Agricolas SM</b> </h3>
-                        <h2 class="my-3"> <h1>Bem vindo(a) ${sessionScope['usuarioLogado'].nome} </h1> <br><br> Nosso site maquinários Agrícola.</h2>
+                        <h2 class="my-3"> <h1>Bem vindo(a) ${sessionScope['usuarioLogado'].nome} ao nosso site. </h1> <br><br> Nosso site maquinários Agrícola.</h2>
                         <p class="mb-3">
 
                             Catálogo de implementos agrícolas da empresa máquinas agrícola SM, <br>
-                            produtos disponíveis no estoque
-                            <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/listar_produto">Catálogo de nossos maquinários </a> 
+                            produtos disponíveis no estoque. 
+                            
+                            
+                            <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/listar_produto">Catálogo de máquinas </a> 
 
                         <p class="mt-2"> <small>Segurança garantida </small> </p>
                     </div>
@@ -68,7 +70,7 @@
 
 
 
-                <h1>Pedidos realizados </h1><br>
+                <h1>Compras realizadas </h1><br>
                 <table class="table table-hover">
                     <thead>
                         <tr>

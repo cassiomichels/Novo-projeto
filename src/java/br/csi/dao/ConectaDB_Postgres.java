@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConectaDB_Postgres {
 
     private static final String url
-            = "jdbc:postgresql://localhost:5432/oo";
+            = "jdbc:postgresql://localhost:5432/ooweb";
     private static final String user = "postgres";
     private static final String pass = "1234";
 

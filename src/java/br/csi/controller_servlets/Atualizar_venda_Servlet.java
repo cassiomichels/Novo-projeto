@@ -26,19 +26,7 @@ public class Atualizar_venda_Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Chamou GET ....");
-        req.setAttribute("clientes", new ClienteDAO().getClientes());
-        req.setAttribute("vendedores", new VendedorDAO().getVendedores());
-        req.setAttribute("caminhoneiros", new CaminhoneiroDAO().getCaminhoneiros());
-        req.setAttribute("produtos", new ProdutoDAO().getProdutos());
-
-        ArrayList<Cliente> clientes = new ClienteDAO().getClientes();
-        ArrayList<Vendedor> vendedores = new VendedorDAO().getVendedores();
-        ArrayList<Caminhoneiro> caminhoneiros = new CaminhoneiroDAO().getCaminhoneiros();
-        ArrayList<Produto> produtos = new ProdutoDAO().getProdutos();
-
-        RequestDispatcher disp
-                = req.getRequestDispatcher("/WEB-INF/views/atualizar_venda.jsp");
-        disp.forward(req, resp);
+    
     }
 
     @Override
