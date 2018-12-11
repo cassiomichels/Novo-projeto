@@ -15,9 +15,28 @@
     <title>Cadastrar Produto</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar13">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="#">
+                    <i class="fa d-inline fa-lg fa-stop-circle-o"></i>
+                    <b> Máquinas Agricolas SM </b>
+                </a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"> <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/busca_caminhoneiro">Equipe de Caminhineiros</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/busca_produto">Lista de Produtos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/busca_cliente">Lista de clientes</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/busca_vendedor">Lista de Vendedores</a> </li> 
+                    <li class="nav-item"> <a class="nav-link" href="http://localhost:8080/MaquinariosAgricola/busca_venda">Lista de vendas realizados</a> </li> 
+                    <li class="nav-item"> <a class="nav-item" href="http://localhost:8080/MaquinariosAgricola/logout">SAIR</a> </li>
+                </ul>
 
+            </div>
+        </div>
+    </nav>
 
-
+ <br><br><br>
     <div class="row">
         <div class="col-md-3"> </div>
         <div class="col-md-6">

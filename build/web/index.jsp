@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="row" >
                     <div class="px-20 col-md-8 text-center mx-auto">
-                        <h3 class="text-primary display-4"> <b>Máquinas Agricolas SM </b> </h3>
+                        <h3 class="text-primary display-4"> <b>Máquinas Agrícolas SM </b> </h3>
 
                         <br><br>
 

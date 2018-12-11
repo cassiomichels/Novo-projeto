@@ -51,19 +51,19 @@
                 <div class="row" >
                     <div class="px-5 col-md-8 text-center mx-auto">
                         <h3 class="text-primary display-4"> <b>Máquinas Agricolas SM </b> </h3>
-                        <h1>Olá ${sessionScope['usuarioLogado'].nome}.</h1>
-                        <br><br>
+                        <h1>Bem-vindo vendedor ${sessionScope['usuarioLogado'].nome}.</h1>
+                        <br>
 
-                        <h2 class="my-3">Bem vindo ao nosso sistema de gerenciamento de equipes, vendas e cadastro de novas maquinas ao catálogo.</h2>
                         <p class="mb-3">
-
+                                <h1> <a href="http://localhost:8080/MaquinariosAgricola/cadastro_venda" class="btn btn-success">Realizar uma nova venda</a></h1>
+                                <br>
                             A tecnologia está presente em todo nosso trabalho. Usamos tecnologia de ponta para oferecer a melhor experiência aos nossos usuários e as melhores soluções máquinas agrícolas. Inovamos para deixar a vida das pessoas mais fácil e para materializar desejos. Antecipamos necessidades. Inovamos para revolucionar o mercado.
                             .</p> 
                         <a href="http://localhost:8080/MaquinariosAgricola/cadastro_produto" class="btn btn-primary">Cadastre um produto</a>
                         <a href="http://localhost:8080/MaquinariosAgricola/cadastro_cliente" class="btn btn-primary">Cadastre um cliente</a><br><br>
                         <a href="http://localhost:8080/MaquinariosAgricola/cadastro_caminhoneiro" class="btn btn-primary">Cadastre um caminhoneiro</a>
                         <a href="http://localhost:8080/MaquinariosAgricola/cadastro_vendedor" class="btn btn-primary">Cadastre um vendedor</a>
-                        <h1> <a href="http://localhost:8080/MaquinariosAgricola/cadastro_venda" class="btn btn-primary">Realizar uma venda</a></h1>
+                        
 
 
                         <p class="mt-2"> <small>Segurança garantida </small> </p>
