@@ -53,6 +53,10 @@
                                 <label for="descricao">Descrição:</label>
                                 <input name="descricao" type="text" class="form-control" id="descricao" value=<c:out value="${produto.descricao}"/>>                
                             </div>
+                            <div class="form-group">
+                                <label for="preco">Descrição:</label>
+                                <input name="preco" type="number" class="form-control" id="preco" value=<c:out value="${produto.preco}"/>>                
+                            </div>
 
 
                             <button type="submit" value="Enviar" class="btn btn-primary">Atualizar</button>

@@ -57,6 +57,7 @@
                         <th>Vendedor responsavel</th>
                         <th>Nome Caminhoneiro</th>
                         <th>Nome produto</th>  
+                        <th>Preço:</th>
                         <th>Endereço</th>
                         <th>Opção</th>
 
@@ -71,6 +72,7 @@
                             <td><c:out value="${venda.caminhoneiro.nome}"/></td>
 
                             <td><c:out value="${venda.produto.nome}"/></td> 
+                            <td><c:out value="R$ ${venda.produto.preco}"/></td> 
                             <td><c:out value="${venda.endereco}"/> <br /></td>
                             <td><a href="http://localhost:8080/MaquinariosAgricola/deletar_venda?id=${venda.id}"  class="btn btn-danger btn-lg">Deletar</a></td>
                             <td><a href="http://localhost:8080/MaquinariosAgricola/alterar_venda?id=${venda.id}"  class="btn btn-primary btn-lg">Alterar</a></td>

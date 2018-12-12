@@ -10,13 +10,14 @@ import java.util.ArrayList;
 
 public class ProdutoDAO {
 
-    public int create(String nome, String descricao) {
+    public int create(String nome, String descricao, String preco) {
         try (Connection conn = new ConectaDB_Postgres().getConexao()) {
-            String sql = " INSERT INTO produto(nome, descricao) "
+            String sql = " INSERT INTO produto(nome, descricao, preco) "
                     + " VALUES(?, ?);";
             PreparedStatement pre = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             pre.setString(1, nome);
             pre.setString(2, descricao);
+            pre.setString(3, preco);
 
             pre.execute();
             ResultSet rs = pre.getGeneratedKeys();
@@ -36,11 +37,13 @@ public class ProdutoDAO {
 
         try (Connection conn = new ConectaDB_Postgres().getConexao()) {
 
-            String sql = " INSERT INTO produto(nome, descricao)"
-                    + " VALUES(?, ?);";
+            String sql = " INSERT INTO produto(nome, descricao, preco)"
+                    + " VALUES(?, ?, ?);";
             PreparedStatement pre = conn.prepareStatement(sql);
             pre.setString(1, produto.getNome());
             pre.setString(2, produto.getDescricao());
+            pre.setString(3, produto.getPreco());
+            
 
             if (pre.executeUpdate() > 0) {
                 return true;
@@ -64,6 +67,7 @@ public class ProdutoDAO {
                 Produto u = new Produto();
                 u.setNome(rs.getString("nome"));
                 u.setDescricao(rs.getString("descricao"));
+                u.setPreco(rs.getString("preco"));
 
                 return u;
             }
@@ -77,13 +81,14 @@ public class ProdutoDAO {
 
         try (Connection conn = new ConectaDB_Postgres().getConexao()) {
             String sql = " UPDATE Produto"
-                    + " SET nome = ?, descricao = ?"
+                    + " SET nome = ?, descricao = ?, preco = ? "
                     + " WHERE id = ?";
             PreparedStatement pre = conn.prepareStatement(sql);
             pre.setString(1, produto.getNome());
             pre.setString(2, produto.getDescricao());
+            pre.setString(3, produto.getPreco());
 
-            pre.setInt(3, produto.getId());
+            pre.setInt(4, produto.getId());
             if (pre.executeUpdate() > 0) {
                 return true;
             }
@@ -122,6 +127,7 @@ public class ProdutoDAO {
                 us.setId(rs.getInt("id"));
                 us.setNome(rs.getString("nome"));
                 us.setDescricao(rs.getString("descricao"));
+                us.setPreco(rs.getString("preco"));
 
                 produtos.add(us);
             }

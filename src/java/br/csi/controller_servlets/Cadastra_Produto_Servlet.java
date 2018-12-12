@@ -31,8 +31,9 @@ public class Cadastra_Produto_Servlet extends HttpServlet {
 
         String nome = req.getParameter("nome");
         String descricao = req.getParameter("descricao");
+        String preco = req.getParameter("preco");
 
-        Produto produto = new Produto(nome, descricao);
+        Produto produto = new Produto(nome, descricao, preco);
 
         boolean retorno = new ProdutoDAO().create(produto);
         if (retorno) {

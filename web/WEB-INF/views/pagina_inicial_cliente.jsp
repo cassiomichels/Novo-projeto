@@ -77,6 +77,7 @@
                             <th>Vendedor</th>
                             <th>Caminhoneiro </th>
                             <th>Produto</th>  
+                            <th>Preço</th>
                             <th>Endereço para entrega</th>
 
                         </tr>
@@ -87,6 +88,7 @@
                                 <td><c:out value="${venda.vendedor.nome}"/></td>
                                 <td><c:out value="${venda.caminhoneiro.nome}"/></td>
                                 <td><c:out value="${venda.produto.nome}"/></td> 
+                                <td><c:out value="R$ ${venda.produto.preco}"/></td> 
                                 <td><c:out value="${venda.endereco}"/> <br /></td>
 
                             </tr>                        

@@ -5,6 +5,7 @@ public class Produto {
     private int id;
     private String nome;
     private String descricao;
+    private String preco;
 
     public int getId() {
         return id;
@@ -30,18 +31,31 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public Produto() {
+    public String getPreco() {
+        return preco;
     }
 
-    public Produto(String nome, String descricao) {
-        this.nome = nome;
-        this.descricao = descricao;
+    public void setPreco(String preco) {
+        this.preco = preco;
     }
 
-    public Produto(int id, String nome, String descricao) {
+    public Produto(int id, String nome, String descricao, String preco) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
+        this.preco = preco;
     }
+
+    public Produto(String nome, String descricao, String preco) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+    }
+    
+
+    public Produto() {
+    }
+
+    
 
 }

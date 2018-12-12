@@ -23,10 +23,11 @@ public class Atualizar_Produto_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String nome = req.getParameter("nome");
         String descricao = req.getParameter("descricao");
+        String preco = req.getParameter("preco");
 
         int id = Integer.parseInt(req.getParameter("id"));
 
-        Produto p = new Produto(id, nome, descricao);
+        Produto p = new Produto(id, nome, descricao,preco);
         boolean retorno = new ProdutoDAO().update(p);
 
         if (retorno) {
