@@ -52,6 +52,9 @@
                         <div class="form-group">
                             <label for="nome">Descrição do produto: </label>
                             <input type="text" class="form-control" placeholder="Digite uma breve descrição do produto"  name="descricao"> </div> 
+                         <div class="form-group">
+                            <label for="nome">Preço: </label>
+                            <input type="number" step="0.01" class="form-control" placeholder="Digite o valor do produto"  name="preco"> </div>
 
                         <button type="submit" class="btn btn-primary"  value="Enviar">Cadastrar</button>
 

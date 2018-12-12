@@ -57,6 +57,7 @@
                         <th>Id</th>                        
                         <th>Nome</th>
                         <th>Descrição</th>
+                        <th>Preço</th>
                         <th>Opções</th>
 
 
@@ -67,7 +68,8 @@
                         <tr>
                             <td><c:out value="${produto.id}"/></td>
                             <td><c:out value="${produto.nome}"/></td>
-                            <td><c:out value="${produto.descricao}"/><br /></td> 
+                            <td><c:out value="${produto.descricao}"/></td> 
+                            <td><c:out value="${produto.preco}"/></td>
                             <td class="text-center">
                                 <a href="http://localhost:8080/MaquinariosAgricola/deletar_produto?id=${produto.id}"  class="btn btn-danger btn-lg">Deletar</a>
                                 <a href="http://localhost:8080/MaquinariosAgricola/alterar_produto?id=${produto.id}"  class="btn btn-primary btn-lg">alterar</a>
