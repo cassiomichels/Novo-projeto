@@ -32,9 +32,9 @@
     </nav>
     <div>
 
-        <h1>Operação realizada com SUCESSO</h1>
+        
         <br>
-        <h2>Caminhoneiro Cadastrado com SUCESSO:</h2>
+        <h2>Caminhoneiro Cadastrado com Sucesso</h2>
         <h3>Nome do caminhoneiro:</h3>
 
         <h3>${caminhoneiro}</h3>

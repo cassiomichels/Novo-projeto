@@ -21,7 +21,7 @@
             <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar13">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="#">
+                <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="http://localhost:8080/MaquinariosAgricola/homepage_vendedor">
                         <i class="fa d-inline fa-lg fa-stop-circle-o"></i>
                         <b> Máquinas Agricolas SM </b>
                     </a>
@@ -68,7 +68,7 @@
                         <tr>
                             <td><c:out value="${vendedor.id}"/></td>
                             <td><c:out value="${vendedor.nome}"/></td>
-                            <td><c:out value="${vendedor.email}"/></td> <br /></td>  
+                            <td><c:out value="${vendedor.email}"/></td> <br /> 
                     <td class="text-center">
                         <a href="http://localhost:8080/MaquinariosAgricola/deletar_vendedor?id=${vendedor.id}"  class="btn btn-danger btn-lg">Deletar</a>
                         <a href="http://localhost:8080/MaquinariosAgricola/alterar_vendedor?id=${vendedor.id}"  class="btn btn-primary btn-lg">alterar</a>

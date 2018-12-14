@@ -59,13 +59,13 @@
                     <form method="post" action="cadastro_vendedor">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" placeholder="Digite o nome do vendedor"  name="nome"> </div>
+                            <input type="text" class="form-control" placeholder="Digite o nome do vendedor"  name="nome" required> </div>
                         <div class="form-group">
                             <label for="nome">Email</label>
-                            <input type="email" class="form-control" placeholder="Digite o seu email"  name="email"> </div>
+                            <input type="email" class="form-control" placeholder="Digite o seu email"  name="email" required> </div>
                         <div class="form-group">
                             <label for="nome">Senha: </label>
-                            <input type="password" class="form-control" placeholder="Digite a sua senha"  name="senha"> </div>
+                            <input type="password" class="form-control" placeholder="Digite a sua senha"  name="senha" required> </div>
 
 
                         <button type="submit" class="btn btn-primary"  value="Enviar">Cadastrar</button>

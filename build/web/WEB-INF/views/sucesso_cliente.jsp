@@ -8,9 +8,34 @@
 <title>Sucesso ao cadastrar</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar13">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="#">
+                    <i class="fa d-inline fa-lg fa-stop-circle-o"></i>
+                    <b> Máquinas Agricolas SM </b>
+                </a>
+                <ul class="navbar-nav mx-auto">
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="#">
+                            <i class="fa fa-twitter fa-fw"></i>
+                        </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">
+                            <i class="fa fa-facebook fa-fw"></i>
+                        </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">
+                            <i class="fa fa-slack fa-fw"></i>
+                        </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div>
 
-        <h1>Operação realizada com SUCESSO</h1>
+
         <br>
         <h2>Cliente cadastrado com SUCESSO</h2>
         <h3>nome:</h3>

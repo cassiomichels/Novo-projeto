@@ -48,13 +48,13 @@
                     <form method="post" action="cadastro_produto">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" placeholder="Digite o nome da máquina agrícula a ser cadastrada"  name="nome"> </div>
+                            <input type="text" class="form-control" placeholder="Digite o nome da máquina agrícula a ser cadastrada"  name="nome" required> </div>
                         <div class="form-group">
                             <label for="nome">Descrição do produto: </label>
-                            <input type="text" class="form-control" placeholder="Digite uma breve descrição do produto"  name="descricao"> </div> 
+                            <input type="text" class="form-control" placeholder="Digite uma breve descrição do produto"  name="descricao" required> </div> 
                          <div class="form-group">
                             <label for="nome">Preço: </label>
-                            <input type="number" step="0.01" class="form-control" placeholder="Digite o valor do produto"  name="preco"> </div>
+                            <input type="number" step="0.01" class="form-control" placeholder="Digite o valor do produto"  name="preco" min=0 required> </div>
 
                         <button type="submit" class="btn btn-primary"  value="Enviar">Cadastrar</button>
 

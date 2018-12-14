@@ -20,7 +20,7 @@
             <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar13">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="#">
+                <div class="collapse navbar-collapse" id="navbar13"> <a class="navbar-brand d-none d-md-block" href="http://localhost:8080/MaquinariosAgricola/homepage_cliente">
                         <i class="fa d-inline fa-lg fa-stop-circle-o"></i>
                         <b> Máquinas Agrícolas SM</b>
                     </a>

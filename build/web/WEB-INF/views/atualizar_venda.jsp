@@ -38,16 +38,16 @@
             </div>
         </nav>
 
-
+        <h1>Atualize os dados incorretos na venda selecionada</h1>
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <form action="atualizar_venda?id=${id}" method="POST">
                             <div class="form-group">
-                            <label for="idCliente">Cliente:</label>
+                            <label for="idCliente">Cliente (Selecione o cliente desejado)</label>
                             <select class="custom-select" name="id_cliente">                
-                                <option selected>Selecione um cliente abaixo</option>
+                              
                                 <c:forEach items="${clientes}" var="cliente">                                  
                                     <option value="<c:out value="${cliente.id}"/>">
                                         <c:out value="${cliente.id}${' - '}${cliente.nome}"/></option>'
@@ -55,9 +55,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="idVendedor">Vendedor:</label>
+                            <label for="idVendedor">Vendedor (Selecione qual vendedor responsável )</label>
                             <select class="custom-select" name="id_vendedor">                
-                                <option selected>Selecione vendedor responsavel por essa venda</option>
+                               
                                 <c:forEach items="${vendedores}" var="vendedor">                                  
                                     <option value="<c:out value="${vendedor.id}"/>">
                                         <c:out value="${vendedor.id}${' - '}${vendedor.nome}"/></option>'
@@ -65,9 +65,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="idCaminhoneiro">Caminhoneiro:</label>
+                            <label for="idCaminhoneiro">Caminhoneiro (Selecione o caminhoneiro que irá fazer a entrega)</label>
                             <select class="custom-select" name="id_caminhoneiro">                
-                                <option selected>Selecione um caminhoneiro abaixo</option>
+                               
                                 <c:forEach items="${caminhoneiros}" var="caminhoneiro">                                  
                                     <option value="<c:out value="${caminhoneiro.id}"/>">
                                         <c:out value="${caminhoneiro.id}${' - '}${caminhoneiro.nome}"/></option>'
@@ -75,9 +75,9 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="idProduto">Maquina :</label>
+                            <label for="idProduto">Maquina (Selecione máquina que será vendida)</label>
                             <select class="custom-select" name="id_produto">                
-                                <option selected>Selecione uma maquina abaixo</option>
+                              
                                 <c:forEach items="${produtos}" var="produto">                                  
                                     <option value="<c:out value="${produto.id}"/>">
                                         <c:out value="${produto.id}${' - '}${produto.nome}${' - '}${produto.descricao}"/></option>'
@@ -86,9 +86,9 @@
                         </div>
                         <div class="form-group">
                             <label for="endereco">Endereço:</label>
-                            <input type="text" class="form-control" placeholder="Digite o endereço de entrega"  name="endereco"> </div>
+                            <input type="text" class="form-control" placeholder="Digite o endereço de entrega"  name="endereco" required> </div>
 
-                        <button type="submit" value="Enviar" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" value="Enviar" class="btn btn-primary">Atualizar Venda</button>
                     </form>
                     </div>
                     </body>

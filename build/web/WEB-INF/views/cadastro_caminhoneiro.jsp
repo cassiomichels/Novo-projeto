@@ -48,17 +48,17 @@
                     <form method="post" action="cadastro_caminhoneiro">
                         <div class="form-group">
                             <label for="nome">Nome:</label>
-                            <input type="text" class="form-control" placeholder="Digite o nome do caminhoneiro"  name="nome"> </div>
+                            <input type="text" class="form-control" placeholder="Digite o nome do caminhoneiro"  name="nome" required> </div>
                         <div class="form-group">
                             <label for="nome">Email:</label>
-                            <input type="text" class="form-control" placeholder="Digite o email"  name="email"> </div>
+                            <input type="text" class="form-control" placeholder="Digite o email"  name="email" required> </div>
 
                         <div class="form-group">
                             <label for="nome">Endereço:</label>
-                            <input type="text" class="form-control" placeholder="Digite o seu endereço"  name="endereco"> </div> 
+                            <input type="text" class="form-control" placeholder="Digite o seu endereço"  name="endereco" required> </div> 
                         <div class="form-group">
                             <label for="nome">Placa da Caminhão:  </label>
-                            <input type="text" class="form-control" placeholder="Digite a placa do caminhão"  name="placa"> </div> 
+                            <input type="text" class="form-control" placeholder="Digite a placa do caminhão"  name="placa" required> </div> 
                         <button type="submit" class="btn btn-primary"  value="Enviar">Cadastrar</button>
 
                 </div>
